@@ -16,7 +16,20 @@ public class Shacho {
 		else{
 			System.out.println("‚ ‚È‚½‚Í’N‚Å‚·‚©H");
 		}
+		
+		/**
+		 * ƒ|ƒŠƒ‚[‘æ‚P’e
+		 * ‘Sˆõ‚ğshain‚Æ‚µ‚Äˆµ‚¤‚±‚ÆB
+		 */
 		shain.standup();
+
+		/**
+		 * ƒ|ƒŠƒ‚[‘æ‚Q’e
+		 * ‰‰KQ‹‹—¿ŒvZ
+		 */
+		int kihonkyu = Integer.parseInt(args[1]);
+		int Kyuryo = shain.getKyuryo(kihonkyu);
+		System.out.println("„‚Ì‹‹—¿‚Í" + Kyuryo + "‰~‚Å‚·B" );
 	}
 
 }
