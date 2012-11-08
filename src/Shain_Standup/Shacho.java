@@ -13,6 +13,9 @@ public class Shacho {
 		else if(args[0].equals("Bucho")){
 			shain = new Bucho();
 		}
+		else if(args[0].equals("Torishimariyaku")){
+			shain = new Torishimariyaku();
+		}
 		else{
 			System.out.println("Ç†Ç»ÇΩÇÕíNÇ≈Ç∑Ç©ÅH");
 		}
