@@ -2,21 +2,9 @@ package shain_standup2;
 
 public class Shacho {
 	public static void main(String[] args){
-		Shain shain = null;
 		
-		if(args[0].equals("Tanto")){
-			shain = new Tanto();
-		}
-		else if(args[0].equals("Shunin")){
-			shain = new Shunin();
-		}
-		else if(args[0].equals("Bucho")){
-			shain = new Bucho();
-		}
-		else{
-			System.out.println("Ç†Ç»ÇΩÇÕíNÅHÅH");
-		}
-		
+		ShainFactory shainFactory = new ShainFactory();
+		Shain shain = shainFactory.factory(args[0]);
 		int kihonkyu = Integer.parseInt(args[1]);
 		shain.setKihonkyu(kihonkyu);
 		int Kyuryo = shain.getKyuryo();
