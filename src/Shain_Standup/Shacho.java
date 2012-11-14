@@ -1,4 +1,4 @@
-package Shain_Standup;
+package shain_Standup;
 
 public class Shacho {
 	public static void main(String[] args){

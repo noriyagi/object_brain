@@ -1,4 +1,4 @@
-package Shain_Standup;
+package shain_Standup;
 
 public interface Shain{
 	/**

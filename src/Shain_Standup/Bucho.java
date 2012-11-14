@@ -1,4 +1,4 @@
-package Shain_Standup;
+package shain_Standup;
 
 public class Bucho implements Shain {
 	public void standup(){
