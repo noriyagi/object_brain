@@ -22,7 +22,9 @@ public class Manager {
 		Collection<Meisai> meisais = juchu.getMeisai();
 		
 		Iterator<Meisai> iterator = meisais.iterator();
-		int gokei = 0;
+		// 合計の計算を、Juchuクラスに委譲した。
+		// 明細の合計は、各明細を管理する親玉の受注クラスで行う。
+		//int gokei = 0;
 		
 		while( iterator.hasNext()){
 			Meisai meisai = (Meisai)iterator.next();
@@ -30,10 +32,10 @@ public class Manager {
 					meisai.getMeisaiBango() + "\t\t" +
 					meisai.getProductName() + "\t" +
 					meisai.getPrice() + "円");
-			gokei = gokei + meisai.getPrice();
+			//gokei = gokei + meisai.getPrice();
 		}
 		System.out.println("----------------------------------------");
-		System.out.println("    合計金額\t\t\t" + gokei + "円");
+		System.out.println("    合計金額\t\t\t" + juchu.getMeisaiGoukei() + "円");
 		
 	}
 

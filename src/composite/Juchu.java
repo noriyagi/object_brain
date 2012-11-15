@@ -2,6 +2,7 @@ package composite;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class Juchu {
 	private int juchubango;
@@ -25,6 +26,17 @@ public class Juchu {
 	}
 	public int getJuchubango(){
 		return juchubango;
+	}
+	public int getMeisaiGoukei(){
+		Iterator<Meisai> iterator = meisais.iterator();
+		int gokei = 0;
+		
+		while( iterator.hasNext()){
+			Meisai meisai = (Meisai)iterator.next();
+			gokei = gokei + meisai.getPrice();
+		}
+		return gokei;
+		
 	}
 
 }
